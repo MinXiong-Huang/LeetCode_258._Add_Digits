@@ -4,16 +4,16 @@ class Solution(object):
         :type num: int
         :rtype: int
         """
-        answer=0
+        answer = 0
         while num>0:
-            answer+=int(num%10)
-            num=int(num/10)
+            answer += int(num%10)
+            num = int(num/10)
 
-            if num==0 and answer>9:
-                num=int(answer)
-                answer=0
+            if num == 0 and answer>9:
+                num = int(answer)
+                answer = 0
         return answer
 
 #Example
-s=Solution()
+s = Solution()
 s.addDigits(38)
